@@ -1,8 +1,8 @@
 <template lang="pug">
   div
-    p Are you really sure?
+    h1 Are you reallllly sure?
+    Button(path="/" text="No")
     Button(path="/2" text="Yes")
-    button(path="/2" text="Yes")
 </template>
 
 <script lang="ts">
