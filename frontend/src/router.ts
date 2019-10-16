@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import ThankYou from './views/ThankYou.vue';
 import Level0 from './views/Level0.vue';
 import Level1 from './views/Level1.vue';
 import Level2 from './views/Level2.vue';
@@ -12,7 +13,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'start',
+      name: 'ThankYou',
+      component: ThankYou,
+    },
+    {
+      path: '/0',
+      name: '0',
       component: Level0,
     },
     {
