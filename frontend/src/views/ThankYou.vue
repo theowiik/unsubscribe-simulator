@@ -1,10 +1,10 @@
 <template lang="pug">
   div
-    h1 Thank you for subscribing to (NAME)'s newsletter!
+    h1(class="text-2xl font-bold text-gray-700 leading-tight") Thank you for subscribing to (NAME)'s newsletter!
     p
       span Click 
       span
-        Button(path="/0" text="here")
+        router-link(to="/0" class="font-semibold text-blue-500") here
       span  if you wish to unsubscribe.
 </template>
 
