@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    h1(class="text-2xl font-bold text-gray-700 leading-tight") Thank you for subscribing to (NAME)'s newsletter!
+    Header(text="Thank you for subscribing to (NAME)'s newsletter!")
     p
       span Click 
       span
@@ -11,10 +11,13 @@
 <script lang="ts">
 import Vue from 'vue';
 import Button from '@/components/Button.vue';
+import Header from '@/components/Header.vue';
+
 export default Vue.extend({
   name: 'ThankYou',
   components: {
     Button,
+    Header,
   },
 });
 </script>
