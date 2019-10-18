@@ -1,4 +1,6 @@
 <template lang="pug">
   #app
-    router-view
+    .flex.justify-center(class="mt-5 sm:mt-10")
+      .container.px-4
+        router-view
 </template>
