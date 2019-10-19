@@ -1,23 +1,25 @@
 <template lang="pug">
-  div
-    h1 Sad to see you go!
-    p You have now been succesfully unsubscribed! *
+  div.text-center
+    Header(text="Sad to see you go 😥")
+    p.text-gray-600 You have now been unsuccesfully unsubscribed
 
     - for (var i = 0; i < 15; i++)
       br
 
     p(style="font-size: 7pt")
-      Button(path="/", text="* If you click this link")
+      router-link( to="/3" class="text-gray-600 hover:text-gray-800" ) I still want to unsubscribe
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Button from '@/components/Button.vue';
+import Header from '@/components/Header.vue';
 
 export default Vue.extend({
   name: 'Level2',
   components: {
     Button,
+    Header,
   },
 });
 </script>
