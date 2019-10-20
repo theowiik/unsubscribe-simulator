@@ -1,8 +1,9 @@
 <template lang="pug">
   div.text-center
     Header(text="Are you reallllly sure?")
-    Button(path="/" text="No" danger=true)
-    Button(path="/2" text="Yes" success=true)
+    .mt-3
+      Button(path="/" text="No" danger=true)
+      Button.ml-5(path="/2" text="Yes" success=true)
 </template>
 
 <script lang="ts">

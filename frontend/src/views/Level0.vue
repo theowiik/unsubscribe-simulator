@@ -1,8 +1,9 @@
 <template lang="pug">
   div.text-center
     Header(text="Are you sure you want to unsubscribe?")
-    Button(path="/1" text="Yes" danger)
-    Button(path="/" text="No" success)
+    .mt-3
+      Button(path="/1" text="Yes" danger)
+      Button.ml-5(path="/" text="No" success)
 </template>
 
 <script lang="ts">
