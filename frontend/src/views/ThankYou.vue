@@ -42,10 +42,6 @@ export default Vue.extend({
     Header,
   },
   mounted() {
-    for (let i = 0; i < 100; i++) {
-      console.log(this.getRandNewsletter());
-    }
-
     this.typewriteNewsletter();
   },
   methods: {
