@@ -4,6 +4,7 @@ import ThankYou from './views/ThankYou.vue';
 import Level0 from './views/Level0.vue';
 import Level1 from './views/Level1.vue';
 import Level2 from './views/Level2.vue';
+import Level3 from './views/Level3.vue';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/2',
       name: '2',
       component: Level2,
+    },
+    {
+      path: '/3',
+      name: '3',
+      component: Level3,
     },
   ],
 });
