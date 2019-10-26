@@ -2,5 +2,6 @@
   #app
     .flex.justify-center(class="mt-5 sm:mt-10")
       .container.px-4
-        router-view
+        transition(name="fade" mode="out-in")
+          router-view
 </template>
