@@ -2,7 +2,7 @@
   div.text-center
     Header(text="Are you sure you want to unsubscribe?")
     .mt-3
-      Button(path="/1" text="Yes" danger)
+      Button(path="/1" text="Yes" light)
       Button.ml-5(path="/" text="No" success)
 </template>
 

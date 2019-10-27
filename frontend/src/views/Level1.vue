@@ -2,8 +2,8 @@
   div.text-center
     Header(text="Are you reallllly sure?")
     .mt-3
-      Button(path="/" text="No" danger=true)
-      Button.ml-5(path="/2" text="Yes" success=true)
+      Button(path="/" text="No" success)
+      Button.ml-5(path="/2" text="Yes" danger)
 </template>
 
 <script lang="ts">
