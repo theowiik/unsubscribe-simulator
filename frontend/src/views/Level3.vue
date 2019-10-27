@@ -15,7 +15,7 @@
         )
 
         .flex.mt-3.w-full.justify-end
-          Button(text="Verify" success)
+          Button(text="Verify" path="/4" success)
 
     #loading.mt-10
 </template>
