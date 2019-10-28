@@ -6,6 +6,7 @@ import Level1 from './views/Level1.vue';
 import Level2 from './views/Level2.vue';
 import Level3 from './views/Level3.vue';
 import Level4 from './views/Level4.vue';
+import Level5 from './views/Level5.vue';
 
 Vue.use(Router);
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/4',
       name: '4',
       component: Level4,
+    },
+    {
+      path: '/5',
+      name: '5',
+      component: Level5,
     },
   ],
 });
