@@ -1,14 +1,14 @@
-<template lang="pug">
+<template lang='pug'>
   .text-center
     Header(:text="'Thank you for subscribing to the ' + newsletter + ' newsletter'")
     p.text-gray-600.font
       span Click 
       span
-        router-link(to="/0" class="text-blue-500") here
+        router-link(to='/0' class='text-blue-500') here
       span  if you wish to unsubscribe.
 </template>
 
-<script lang="ts">
+<script lang='ts'>
 import Vue from 'vue';
 import Button from '@/components/Button.vue';
 import Header from '@/components/Header.vue';
@@ -33,7 +33,7 @@ export default Vue.extend({
         'All About Rocks and Minerals',
         'Interesting and Cool Postcards',
         'All About Yarn and Knitting Needles',
-        ],
+      ],
       newsletter: '',
     };
   },
@@ -65,7 +65,7 @@ export default Vue.extend({
 
       // Animate a underscore.
       for (let i = 0; i < 6; i++) {
-        const char: string = (i % 2 === 0) ? '_' : ' ';
+        const char: string = i % 2 === 0 ? '_' : ' ';
         this.newsletter = char;
         await this.wait(sleepTime);
       }
@@ -73,7 +73,7 @@ export default Vue.extend({
       // Build the name charachter by charachter, with a underscore at the end.
       const minSleep: number = 50;
       for (let i = 0; i <= newsletterName.length; i++) {
-        await this.wait(Math.max(sleepTime *= 0.88, minSleep));
+        await this.wait(Math.max((sleepTime *= 0.88), minSleep));
         this.newsletter = newsletterName.substring(0, i) + '_ ';
       }
 
