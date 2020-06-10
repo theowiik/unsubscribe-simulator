@@ -7,6 +7,7 @@ import Level2 from './views/Level2.vue';
 import Level3 from './views/Level3.vue';
 import Level4 from './views/Level4.vue';
 import Level5 from './views/Level5.vue';
+import Unsubscribed from './views/Unsubscribed.vue';
 
 Vue.use(Router);
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/5',
       name: '5',
       component: Level5,
+    },
+    {
+      path: '/unsubscribed',
+      name: 'Unsubscribed',
+      component: Unsubscribed,
     },
   ],
 });
